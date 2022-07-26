@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>&#127815 Fruit Shop &#129381</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fruit.css">
+</head>
+
+<body>
+    <header>
+        <i class="fa fa-shopping-basket" aria-hidden="true" id="basket"></i></p>        
+        <h2>Fruit Shop</h2>
+    </header>
+
+    <div class="fruit-container">
+        
+        <div id="fruit-products"></div>
+
+        
+        <div id="basket-items">This is the place to render fruits in the basket</div>
+    </div>
+
+    <template id="template-product">
+        <div class="p-item">
+            <img class="p-img" />
+            <div class="p-name"></div>
+            <div class="p-desc"></div>
+            <div class="p-price"></div>
+            <button class="cart p-add">Add To Cart</button>
+        </div>
+    </template>
+
+    <footer>&copy; 2022 created with <span>&#10084;</span></footer>
+
+    <script src="fruit_lists.js"></script>
+    <script src="fruit.js" async defer></script>
+</body>
+
+</html>

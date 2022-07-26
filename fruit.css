@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#basket {
+    text-align: right;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+header,
+footer {
+    
+    background: #80c080;
+    color: #600080;
+}
+.fruit-container {
+    display: grid;
+    grid-template-columns: auto auto ;  
+    
+      
+}
+#basket-items{
+    grid-column: 4 / 4;
+    background-color: #e3e6e9;
+    display: none;
+}
+#fruit-products {
+    height: 100%;
+    width: 100%;  
+    display: grid;
+    gap: 75px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 3fr);
+   
+  }
+  
+  #fruit-products .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    padding: 7px;
+    
+  }
+  #fruit-products .item .item-container{
+    text-align: center;
+  }
+  
+  #fruit-products img {
+    width: 200px;
+    height: 150px;
+       
+  }  
+  button{
+    width: 100%;
+    padding: 9px;
+    background-color: rgb(90, 88, 88);
+    border: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    border-radius: 11px;
+  } 
+
+  .basket-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .basket-container .fruit-img{
+    border: 1px solid rgb(216, 23, 23);
+    padding: 3px;
+    margin: 2px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .basket-container img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .basket-container .units{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    
+  }
+  .basket-container .units .btn {
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 4px;
+  }
+
+  .basket-container .units .btn, .number{
+    margin: 0px 9px;
+  } 
+  .btn-del{
+    background-color: rgb(207, 31, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20%;
+    padding: 2px 7px;
+  }
+  
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+span {
+    color: red;
+  }
+
