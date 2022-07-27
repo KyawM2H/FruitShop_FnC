@@ -13,7 +13,15 @@ header {
 #basket {
     text-align: right;
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+        
+}
+.total-items-in-cart{
+    padding: 1px 4px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 5px;
+    
 }
 header,
 footer {
@@ -27,7 +35,7 @@ footer {
     
       
 }
-#basket-items{
+#basket-container{
     grid-column: 4 / 4;
     background-color: #e3e6e9;
     display: none;
@@ -49,7 +57,7 @@ footer {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    border: 2px solid black;
+    border: 2px solid gainsboro;
     padding: 7px;
     
   }
@@ -123,6 +131,7 @@ footer {
 footer {
     text-align: center;
     margin-top: 30px;
+    padding: 7px 0px;
 }
 span {
     color: red;

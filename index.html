@@ -13,27 +13,22 @@
 
 <body>
     <header>
-        <i class="fa fa-shopping-basket" aria-hidden="true" id="basket"></i></p>        
+        <h2 id="subtotal-items">Subtotal: <small>£</small></h2> 
+        <i class="fa fa-shopping-basket" aria-hidden="true" id="basket">
+            <small id="total-items-in-cart"></small>            
+        </i>       
         <h2>Fruit Shop</h2>
     </header>
 
     <div class="fruit-container">
         
         <div id="fruit-products"></div>
-
-        
-        <div id="basket-items">This is the place to render fruits in the basket</div>
-    </div>
-
-    <template id="template-product">
-        <div class="p-item">
-            <img class="p-img" />
-            <div class="p-name"></div>
-            <div class="p-desc"></div>
-            <div class="p-price"></div>
-            <button class="cart p-add">Add To Cart</button>
+        <div id="basket-container">
+            <div id="basket-items">Your Shopping Basket</div>
+                
         </div>
-    </template>
+                
+    </div>
 
     <footer>&copy; 2022 created with <span>&#10084;</span></footer>
 
