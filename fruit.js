@@ -106,14 +106,15 @@ const renderSubTotal = () => {
     totalPrice += fruit.price * fruit.unit;
   });
 
-  subTotal.innerHTML = `Subtotal: <small>£</small>${totalPrice.toFixed(2)}`;
+  subTotal.innerHTML = `🆂🆄🅱🆃🅾🆃🅰🅻 : <small>£</small>${totalPrice.toFixed(2)}`;
 };
 
 const removeItemFromBasket = (id) => {
   basket = basket.filter((fruit) => fruit.id !== id);
   updateBasket();
   if (basket.length === 0) {
-    basketEl.textContent = "Your Shopping Basket is Empty!";
+    basketEl.innerHTML = `<div class="basket-items">Your Shopping Basket is Empty!</div>"`;
+    
   }
 };
 

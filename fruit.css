@@ -40,6 +40,13 @@ footer {
     background-color: #e3e6e9;
     display: none;
 }
+.basket-items{
+  font-family: 'Waiting for the Sunrise', cursive;
+  color: #E30B5C;
+  text-align: center;
+  font-size: 1.4rem;
+
+}
 #fruit-products {
     height: 100%;
     width: 100%;  
